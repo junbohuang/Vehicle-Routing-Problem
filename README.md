@@ -8,12 +8,12 @@ our problem can be classified as the combination of two VRPs:
 
 # Files
 1. config.py 
-⋅⋅⋅ store benchmark parameters
+⋅⋅⋅store benchmark parameters
 2. constraint.py
-⋅⋅⋅ check *capacity and demand constraints*
+⋅⋅⋅check *capacity and demand constraints*
 3. calculate.py
-⋅⋅⋅ calculate *demands* and *distances(cost)*
+⋅⋅⋅calculate *demands* and *distances(cost)*
 
 # TODO
 optimizer.py
-⋅⋅⋅ add optimizer
+⋅⋅⋅add optimizer
