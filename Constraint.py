@@ -12,4 +12,4 @@ def capacity():
             CapacityBinary[a] = 0
     return CapacityBinary
 
-print(capacity())
+print("capacity constraint for each route (1: Fulfilled; 0: Not Fulfilled)",capacity())

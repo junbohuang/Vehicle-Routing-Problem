@@ -50,10 +50,10 @@ def DemandPerRoute():
     return DemandPerRoute
 
 ## check cost function
-#print("cost_vector: \n", Config.cost_vector, Config.cost_vector.shape)
-#print("route: \n",route(), route().shape)
-#print("cost per route:\n",cost())
+print("cost_vector: \n", Config.cost_vector, "\ncost vector shape: \n", Config.cost_vector.shape)
+print("route: \n",route(), "\nroute shape: \n",route().shape)
+print("cost per route:\n",CostPerRoute())
 
 ## check demand function
-#print(Config.demand_vector)
-#print(DemandPerRoute())
+print("demand_vector\n",Config.demand_vector)
+print("DemandPerRoute\n",DemandPerRoute())
