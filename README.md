@@ -7,13 +7,13 @@ our problem can be classified as the combination of two VRPs:
 2. **Vehicle Routing Problem with Multiple Trips (VRPMT)**: The vehicles can do more than one route.
 
 # Files
-1. config.py 
+1. **config.py**
 * store benchmark parameters
-2. constraint.py
+2. **constraint.py**
 * check *capacity and demand constraints*
-3. calculate.py
+3. **calculate.py**
 * calculate *demands* and *distances(cost)*
 
 # TODO
-optimizer.py
+**optimizer.py**
 * add optimizer
