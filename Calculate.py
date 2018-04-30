@@ -1,5 +1,5 @@
 import numpy as np
-from Config import *
+from config import *
 
 """
 m = 4 #num of vehicles
@@ -21,13 +21,13 @@ def distance():
     distance_matrix = np.zeros((a,b))
     for i in range(a):
         for j in range(b-1):
-            distance_matrix[i][j] = Config.distance_matrix[routes[i][j], routes[i][j+1]]
+            distance_matrix[i][j] = config.distance_matrix[routes[i][j], routes[i][j+1]]
     return distance_matrix
 
 
 def CostPerRoute():
     route_distance = [np.sum(distance()[a]) for a in range(len(distance()))]
-    return route_distance * Config.cost_vector
+    return route_distance * config.cost_vector
 
 
 def demand():
@@ -39,7 +39,7 @@ def demand():
     demand_matrix = np.zeros((a,b))
     for i in range(a):
         for j in range(b-1):
-            demand_matrix[i][j] = Config.demand_vector[route()[i][j]]
+            demand_matrix[i][j] = config.demand_vector[route()[i][j]]
     return demand_matrix
 
 
@@ -50,10 +50,11 @@ def DemandPerRoute():
     return DemandPerRoute
 
 ## check cost function
-print("cost_vector: \n", Config.cost_vector, "\ncost vector shape: \n", Config.cost_vector.shape)
-print("route: \n",route(), "\nroute shape: \n",route().shape)
+# print("cost_vector: \n", Config.cost_vector, "\ncost vector shape: \n", Config.cost_vector.shape)
+# print("route(route per row): \n",route(), "\nroute shape: \n",route().shape)
 print("cost per route:\n",CostPerRoute())
 
 ## check demand function
-print("demand_vector\n",Config.demand_vector)
+# print("demand_vector\n",Config.demand_vector)
 print("DemandPerRoute\n",DemandPerRoute())
+print("demand matrix\n", demand())
