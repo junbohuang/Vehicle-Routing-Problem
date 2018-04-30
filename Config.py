@@ -1,6 +1,5 @@
-"""
-Config.py file define basic parameters in the model and feed inputs. 
-"""
+# config.py file define basic parameters in the model and feed inputs.
+
 
 import numpy as np
 

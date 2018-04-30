@@ -1,4 +1,3 @@
-import numpy as np
 import calculate
 from config import *
 
