@@ -6,12 +6,18 @@ n = 9 #num of customers
 """
 
 def route():
+    """generate toy route example for debugging 
+    
+    """
     return np.asarray([[0, 1, 2, 3, 0],
                         [0, 4, 5, 6, 0],
                         [0, 7, 8, 9, 0],
                         [0, 0, 0, 0, 0]])
 
 def distance():
+    """generate global distance matrix with shape [n+1, n+1].
+    
+    """
     routes = route()
     # a: number of routes
     # b: number of customers in one route
@@ -25,11 +31,16 @@ def distance():
 
 
 def CostPerRoute():
+    """based on distance matrix and route to calculate distance/cost per route.
+    
+    return: route_distance * config.cost_vector
+    """
     route_distance = [np.sum(distance()[a]) for a in range(len(distance()))]
     return route_distance * config.cost_vector
 
 
 def demand():
+    """generate demand matrix based on route"""
     routes = route()
     # a: number of routes
     # b: number of customers in one route
@@ -43,6 +54,7 @@ def demand():
 
 
 def DemandPerRoute():
+    """generate demand per route"""
     #DemandPerRoute = np.zeros((len(route())))
     #DemandPerRoute = [Config.demand_vector[a] for a in range(len(route()))]
     DemandPerRoute = [np.sum(demand()[a]) for a in range(len(demand()))]
