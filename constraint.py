@@ -15,3 +15,13 @@ def capacity():
     return CapacityBinary
 
 print("capacity constraint for each route (1: Fulfilled; 0: Not Fulfilled)\n", capacity())
+
+def demand(delivered, request):
+    """customer's demand constraint satisfier."""
+    DemandBinary = 0
+    if delivered >= request:
+        DemandBinary = 1
+    else:
+        DemandBinary = 0
+
+    return DemandBinary
