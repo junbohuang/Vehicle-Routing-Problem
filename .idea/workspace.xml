@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe4f830-5b72-499b-9a36-9c4db4b9dbfc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BFO.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VRP.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/improved_ACO.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calculate.py" afterPath="$PROJECT_DIR$/Calculate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config.py" afterPath="$PROJECT_DIR$/Config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Constraint.py" afterPath="$PROJECT_DIR$/Constraint.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__init__.py" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
